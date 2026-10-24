@@ -1,0 +1,11 @@
+{
+  "name": "sitebot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "vercel": "^34.2.0"
+  }
+}
