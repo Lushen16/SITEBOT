@@ -1,0 +1,20 @@
+[
+  {
+    "label": "dev: Next.js Live Server",
+    "command": "npm run dev",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false
+  },
+  {
+    "label": "build: Production Build",
+    "command": "npm run build",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false
+  },
+  {
+    "label": "install: Instalar Dependências",
+    "command": "npm install",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false
+  }
+]
