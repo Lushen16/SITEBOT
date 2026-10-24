@@ -3,23 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 241, 245, 249;
-  --background-start-rgb: 7, 10, 16;
-  --background-end-rgb: 10, 15, 26;
+  --foreground-rgb: 248, 250, 252;
+  --background-start-rgb: 7, 9, 14;
+  --background-end-rgb: 12, 17, 29;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: radial-gradient(circle at 50% 0%, #111a2e 0%, #070a10 70%);
+  background-color: #07090e;
+  background-image: 
+    radial-gradient(at 50% 0%, rgba(16, 185, 129, 0.08) 0px, transparent 60%),
+    radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 50%);
   min-height: 100vh;
 }
 
-/* Custom scrollbar */
+/* Accessible focus ring utility */
+*:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom accessible scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #070a10;
+  background: #07090e;
 }
 ::-webkit-scrollbar-thumb {
   background: #1e293b;
